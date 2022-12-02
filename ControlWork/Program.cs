@@ -2,13 +2,22 @@
 {
 for (int i=0; i<array.Length;i++)
 {
-    Console.WriteLine($"Введите {i+1}-ую строку:");
+    Console.WriteLine($"Введите значение {i+1}-ой строки:");
     array[i]=Console.ReadLine();
 }
 Console.WriteLine();
 return array;
 }
 
+void PrintArray(string [] array)
+{
+	
+     for (int i=0; i<array.Length;i++)
+{
+     Console.WriteLine($"{array[i]}");
+     }
+    Console.WriteLine();
+}
 Console.Clear();
 
 Console.WriteLine("Введите количество строк в создаваемом массиве:");
