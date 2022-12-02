@@ -30,8 +30,7 @@ string [] NewStringArray (string[]array)
 		newArray[k]=array[i];
 		k++;
 	}
-
-}
+}return newArray;
 }
 
 Console.Clear();
@@ -40,3 +39,9 @@ Console.WriteLine("Введите количество строк в созда�
 int number=int.Parse(Console.ReadLine());
 
 string [] wordsArray = new string [number];
+
+StringArray(wordsArray);
+Console.WriteLine("Созданный массив:");
+PrintArray(wordsArray);
+Console.WriteLine("Массив со строками меньше 3 символов:");
+PrintArray(NewStringArray(wordsArray));
